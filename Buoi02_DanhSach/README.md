@@ -4,7 +4,7 @@ Họ tên: Nguyễn Phong Hòa · MSV: 12425028
 
 ## Bài đã làm
 Bài 1, 2, 3, 4, 5 Chương 4
-Bài 7, 8, 9, 10, 11, 12, 13 ,14, 15, 16, 17, 18
+Bài 7, 8, 9, 10, 11, 12, 13 ,14, 15, 16, 17, 18 Cuối sách
 
 ## Cách chạy
 ```
@@ -93,6 +93,40 @@ Bảng Minesweeper sau khi tính số mìn xung quanh:
   1 -1 -1  2
   1  2  2  1
 === Bài 13 ===
-Đã đảo ngược danh sách liên kết đơn thành công.
+Danh sách ban đầu: 1 2 3
+Danh sách sau khi đảo ngược: 3 2 1
 === Bài 14 ===
-Đã gộp thành công hai danh sách liên kết.
+Danh sách 1: 1 3
+Danh sách 2: 2 4
+Danh sách sau khi gộp: 1 2 3 4
+=== Bài 15 ===
+Danh sách có chu trình không? Có chu trình
+Sau khi ngắt liên kết cuối: Không có chu trình
+=== Bài 16 ===
+Truy cập: https://example.com
+Truy cập: https://github.com
+Truy cập: https://learn.microsoft.com
+Back -> Đang xem: https://github.com
+Back -> Đang xem: https://example.com
+Forward -> Đang xem: https://github.com
+Truy cập: https://stackoverflow.com
+Forward -> Không thể chuyển tiếp.
+=== Bài 17 ===
+Đã thêm: Nơi này có anh - Sơn Tùng M-TP
+Đã thêm: Có chắc yêu là đây - Sơn Tùng M-TP
+Đã thêm: Hãy trao cho anh - Sơn Tùng M-TP
+Bài đang phát: Nơi này có anh - Sơn Tùng M-TP
+Next -> Đang phát: Có chắc yêu là đây - Sơn Tùng M-TP
+Previous -> Đang phát: Nơi này có anh - Sơn Tùng M-TP
+Đã xóa: Nơi này có anh - Sơn Tùng M-TP
+Bài đang phát sau xóa: Có chắc yêu là đây - Sơn Tùng M-TP
+=== Bài 18 ===
+Danh sách đơn ban đầu:
+  [DH01] Nguyễn Phong Hòa | Trạng thái: Chờ xử lý
+  [DH02] Nguyễn Viết Đạt | Trạng thái: Chờ xử lý
+Cập nhật tiến độ -> [DH01] Nguyễn Phong Hòa | Trạng thái: Đang giao
+Cập nhật tiến độ -> [DH01] Nguyễn Phong Hòa | Trạng thái: Hoàn thành
+Hoàn tác trạng thái -> [DH01] Nguyễn Phong Hòa | Trạng thái: Đang giao
+Danh sách đơn sau cập nhật:
+  [DH01] Nguyễn Phong Hòa | Trạng thái: Đang giao
+  [DH02] Nguyễn Viết Đạt | Trạng thái: Chờ xử lý

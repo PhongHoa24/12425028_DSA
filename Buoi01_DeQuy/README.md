@@ -6,6 +6,7 @@ Họ tên: Nguyễn Phong Hòa · MSV: 12425028
 Bài 1, 2, 3, 4, 5 Chương 1
 Bài 1, 2, 3, 4, 5, 6 Chương 2
 Bài 1, 2, 3, 4, 5, 6, 7, 8 Chương 3
+Bài 1, 2, 3, 4, 5, 6, 7 Cuối sách
 
 ## Cách chạy
 ```
@@ -93,5 +94,322 @@ Nhập n: 24
 S(24) = 1,7579
 ```
 
+
+Bổ Sung thêm bài tập cuối sách
+
+=== Bài 1 Cuối sách ===
+Nhập số nguyên dương n: 9
+S(9) = 45
+
+=== Bài 2 Cuối sách ===
+Nhập chuỗi cần đảo ngược: thui thu
+Chuỗi đảo ngược: "uht iuht"
+
+=== Bài 3 Cuối sách ===
+Nhập cơ sở x: 8
+Nhập số mũ nguyên n: 4
+8^4 = 4096
+
+=== Bài 4 Cuối sách ===
+Mảng: 12, 45, 7, 89, 23, 89, 14
+Phần tử lớn nhất: 89
+
+=== Bài 5 Cuối sách ===
+Nhập số nguyên dương n: 656
+Số chữ số của 656 là: 3
+
+=== Bài 6 Cuối sách ===
+Nhập số đĩa n: 8
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ C -> B
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ B -> A
+Chuyển 1 đĩa từ C -> A
+Chuyển 1 đĩa từ B -> C
+Chuyển 1 đĩa từ A -> B
+Chuyển 1 đĩa từ A -> C
+Chuyển 1 đĩa từ B -> C
+
+=== Bài 7 Cuối sách ===
+Nhập độ dài dãy nhị phân n: 5
+Các dãy nhị phân độ dài 5:
+00000
+00001
+00010
+00011
+00100
+00101
+00110
+00111
+01000
+01001
+01010
+01011
+01100
+01101
+01110
+01111
+10000
+10001
+10010
+10011
+10100
+10101
+10110
+10111
+11000
+11001
+11010
+11011
+11100
+11101
+11110
+11111
 
 

@@ -27,6 +27,43 @@ namespace Buoi2_DanhSach
             Link = null;
         }
     }
+    class DNode<T>
+    {
+        public T Data;
+        public DNode<T> Prev;
+        public DNode<T> Next;
+        public DNode(T data)
+        {
+            Data = data;
+            Prev = null;
+            Next = null;
+        }
+    }
+    class BaiHat
+    {
+        public string TenBai { get; set; }
+        public string CaSi { get; set; }
+
+        public BaiHat(string tenBai, string caSi)
+        {
+            TenBai = tenBai;
+            CaSi = caSi;
+        }
+        public override string ToString() => $"{TenBai} - {CaSi}";
+    }
+    class DonHang
+    {
+        public string MaDH { get; set; }
+        public string KhachHang { get; set; }
+        public string TrangThai { get; set; }
+        public DonHang(string maDH, string khachHang, string trangThai = "Chờ xử lý")
+        {
+            MaDH = maDH;
+            KhachHang = khachHang;
+            TrangThai = trangThai;
+        }
+        public override string ToString() => $"[{MaDH}] {KhachHang} | Trạng thái: {TrangThai}";
+    }
     internal class Program
     {
         static void Main(string[] args)
@@ -58,6 +95,14 @@ namespace Buoi2_DanhSach
             Bai13();
             Console.WriteLine("=== Bài 14 ===");
             Bai14();
+            Console.WriteLine("=== Bài 15 ===");
+            Bai15();
+            Console.WriteLine("=== Bài 16 ===");
+            Bai16();
+            Console.WriteLine("=== Bài 17 ===");
+            Bai17();
+            Console.WriteLine("=== Bài 18 ===");
+            Bai18();
         }
         //Bài 1
         static int[] NhapMang(out int n)
@@ -588,15 +633,16 @@ namespace Buoi2_DanhSach
             }
             return prev;
         }
-
         static void Bai13()
         {
             Node head = new Node(1);
             head.Link = new Node(2);
             head.Link.Link = new Node(3);
+            Console.Write("Danh sách ban đầu: ");
+            XuatDanhSach(head);
             head = DaoNguocDS(head);
-            Console.WriteLine("Đã đảo ngược danh sách liên kết đơn thành công.");
-            DaoNguocDS(head);
+            Console.Write("Danh sách sau khi đảo ngược: ");
+            XuatDanhSach(head);
         }
         //Bài 14
         static Node MergeTwoLists(Node l1, Node l2)
@@ -605,8 +651,16 @@ namespace Buoi2_DanhSach
             Node tail = dummy;
             while (l1 != null && l2 != null)
             {
-                if (l1.Data <= l2.Data) { tail.Link = l1; l1 = l1.Link; }
-                else { tail.Link = l2; l2 = l2.Link; }
+                if (l1.Data <= l2.Data)
+                {
+                    tail.Link = l1;
+                    l1 = l1.Link;
+                }
+                else
+                {
+                    tail.Link = l2;
+                    l2 = l2.Link;
+                }
                 tail = tail.Link;
             }
             tail.Link = l1 != null ? l1 : l2;
@@ -614,11 +668,248 @@ namespace Buoi2_DanhSach
         }
         static void Bai14()
         {
-            Node l1 = new Node(1); l1.Link = new Node(3);
-            Node l2 = new Node(2); l2.Link = new Node(4);
+            Node l1 = new Node(1);
+            l1.Link = new Node(3);
+            Node l2 = new Node(2);
+            l2.Link = new Node(4);
+            Console.Write("Danh sách 1: ");
+            XuatDanhSach(l1);
+            Console.Write("Danh sách 2: ");
+            XuatDanhSach(l2);
             Node merged = MergeTwoLists(l1, l2);
-            Console.WriteLine("Đã gộp thành công hai danh sách liên kết.");
-            MergeTwoLists(l1, l2);
+            Console.Write("Danh sách sau khi gộp: ");
+            XuatDanhSach(merged);
+        }
+        //Bài 15
+        static bool CoChuTrinh(Node head)
+        {
+            if (head == null || head.Link == null) return false;
+            Node slow = head;
+            Node fast = head;
+
+            while (fast != null && fast.Link != null)
+            {
+                slow = slow.Link;
+                fast = fast.Link.Link;
+                if (slow == fast) return true;
+            }
+            return false;
+        }
+        static void Bai15()
+        {
+            Node n2 = new Node(2);
+            Node n3 = new Node(3);
+            Node n4 = new Node(4);
+            Node n5 = new Node(5);
+            Node n6 = new Node(6);
+            n2.Link = n3;
+            n3.Link = n4;
+            n4.Link = n5;
+            n5.Link = n6;
+            n6.Link = n2;
+            Console.WriteLine("Danh sách có chu trình không? " + (CoChuTrinh(n2) ? "Có chu trình" : "Không có chu trình"));
+            n6.Link = null;
+            Console.WriteLine("Sau khi ngắt liên kết cuối: " + (CoChuTrinh(n2) ? "Có chu trình" : "Không có chu trình"));
+        }
+
+        //Bài 16
+        static void Bai16()
+        {
+            DNode<string> current = null;
+            void TruyCap(string url)
+            {
+                DNode<string> nodeMoi = new DNode<string>(url);
+                if (current != null)
+                {
+                    current.Next = null;
+                    nodeMoi.Prev = current;
+                    current.Next = nodeMoi;
+                }
+                current = nodeMoi;
+                Console.WriteLine($"Truy cập: {current.Data}");
+            }
+            void Back()
+            {
+                if (current != null && current.Prev != null)
+                {
+                    current = current.Prev;
+                    Console.WriteLine($"Back -> Đang xem: {current.Data}");
+                }
+                else
+                {
+                    Console.WriteLine("Back -> Không thể quay lại.");
+                }
+            }
+            void Forward()
+            {
+                if (current != null && current.Next != null)
+                {
+                    current = current.Next;
+                    Console.WriteLine($"Forward -> Đang xem: {current.Data}");
+                }
+                else
+                {
+                    Console.WriteLine("Forward -> Không thể chuyển tiếp.");
+                }
+            }
+            TruyCap("https://example.com");
+            TruyCap("https://github.com");
+            TruyCap("https://learn.microsoft.com");
+            Back();
+            Back();
+            Forward();
+            TruyCap("https://stackoverflow.com");
+            Forward();
+        }
+        //Bài 17
+        static void Bai17()
+        {
+            DNode<BaiHat> head = null, tail = null, current = null;
+            void ThemBaiHat(string ten, string casi)
+            {
+                DNode<BaiHat> moi = new DNode<BaiHat>(new BaiHat(ten, casi));
+                if (head == null)
+                {
+                    head = tail = current = moi;
+                }
+                else
+                {
+                    tail.Next = moi;
+                    moi.Prev = tail;
+                    tail = moi;
+                }
+                Console.WriteLine($"Đã thêm: {moi.Data}");
+            }
+            void XoaBaiHienTai()
+            {
+                if (current == null)
+                {
+                    Console.WriteLine("Playlist rỗng!");
+                    return;
+                }
+                Console.WriteLine($"Đã xóa: {current.Data}");
+
+                if (head == tail)
+                {
+                    head = tail = current = null;
+                }
+                else if (current == head)
+                {
+                    head = head.Next;
+                    head.Prev = null;
+                    current = head;
+                }
+                else if (current == tail)
+                {
+                    tail = tail.Prev;
+                    tail.Next = null;
+                    current = tail;
+                }
+                else
+                {
+                    current.Prev.Next = current.Next;
+                    current.Next.Prev = current.Prev;
+                    current = current.Next;
+                }
+            }
+            void NextBai()
+            {
+                if (current != null && current.Next != null)
+                {
+                    current = current.Next;
+                    Console.WriteLine($"Next -> Đang phát: {current.Data}");
+                }
+                else Console.WriteLine("Next -> Đã ở cuối playlist.");
+            }
+            void PrevBai()
+            {
+                if (current != null && current.Prev != null)
+                {
+                    current = current.Prev;
+                    Console.WriteLine($"Previous -> Đang phát: {current.Data}");
+                }
+                else Console.WriteLine("Previous -> Đã ở đầu playlist.");
+            }
+            ThemBaiHat("Nơi này có anh", "Sơn Tùng M-TP");
+            ThemBaiHat("Có chắc yêu là đây", "Sơn Tùng M-TP");
+            ThemBaiHat("Hãy trao cho anh", "Sơn Tùng M-TP");
+            Console.WriteLine($"Bài đang phát: {current?.Data}");
+            NextBai();
+            PrevBai();
+            XoaBaiHienTai();
+            Console.WriteLine($"Bài đang phát sau xóa: {current?.Data}");
+        }
+        //Bài 18
+        static void Bai18()
+        {
+            string[] cacTrangThai = { "Chờ xử lý", "Đang giao", "Hoàn thành" };
+            DNode<DonHang> head = null, tail = null;
+
+            void ThemDonHang(string maDH, string khachHang)
+            {
+                DNode<DonHang> moi = new DNode<DonHang>(new DonHang(maDH, khachHang, cacTrangThai[0]));
+                if (head == null) head = tail = moi;
+                else
+                {
+                    tail.Next = moi;
+                    moi.Prev = tail;
+                    tail = moi;
+                }
+            }
+            DNode<DonHang> TimDon(string maDH)
+            {
+                DNode<DonHang> p = head;
+                while (p != null)
+                {
+                    if (p.Data.MaDH == maDH) return p;
+                    p = p.Next;
+                }
+                return null;
+            }
+            void ChuyenTrangThaiTiep(string maDH)
+            {
+                var node = TimDon(maDH);
+                if (node == null) return;
+                int idx = Array.IndexOf(cacTrangThai, node.Data.TrangThai);
+                if (idx < cacTrangThai.Length - 1)
+                {
+                    node.Data.TrangThai = cacTrangThai[idx + 1];
+                    Console.WriteLine($"Cập nhật tiến độ -> {node.Data}");
+                }
+                else
+                {
+                    Console.WriteLine($"Đơn {maDH} đã ở trạng thái cuối ({node.Data.TrangThai}).");
+                }
+            }
+            void QuayLaiTrangThaiTruoc(string maDH)
+            {
+                var node = TimDon(maDH);
+                if (node == null) return;
+                int idx = Array.IndexOf(cacTrangThai, node.Data.TrangThai);
+                if (idx > 0)
+                {
+                    node.Data.TrangThai = cacTrangThai[idx - 1];
+                    Console.WriteLine($"Hoàn tác trạng thái -> {node.Data}");
+                }
+            }
+            void InDanhSachDon()
+            {
+                DNode<DonHang> p = head;
+                while (p != null)
+                {
+                    Console.WriteLine("  " + p.Data);
+                    p = p.Next;
+                }
+            }
+            ThemDonHang("DH01", "Nguyễn Phong Hòa");
+            ThemDonHang("DH02", "Nguyễn Viết Đạt");
+            Console.WriteLine("Danh sách đơn ban đầu:");
+            InDanhSachDon();
+            ChuyenTrangThaiTiep("DH01");
+            ChuyenTrangThaiTiep("DH01");
+            QuayLaiTrangThaiTruoc("DH01");
+            Console.WriteLine("Danh sách đơn sau cập nhật:");
+            InDanhSachDon();
         }
     }
 }
